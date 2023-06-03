@@ -5,10 +5,11 @@ import {
   Link,
   Stack,
   Text,
+  Button,
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaGithubSquare } from "react-icons/fa";
 import { ReactNode } from "react";
 
 const Logo = (props: any) => {
@@ -53,6 +54,7 @@ const SocialButton = ({
       alignItems={"center"}
       justifyContent={"center"}
       transition={"background 0.3s ease"}
+      target="_blank"
       _hover={{
         bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
       }}
@@ -66,10 +68,11 @@ const SocialButton = ({
 export default function SmallCentered() {
   return (
     <Box
-      bg={useColorModeValue("gray.50", "gray.900")}
+      sx={{ width: "100%", position: "fixed", bottom: 0, left: 0 }}
+      bg="palette.300"
       color={useColorModeValue("gray.700", "gray.200")}
     >
-      <Container
+      {/* <Container
         as={Stack}
         maxW={"6xl"}
         py={4}
@@ -84,7 +87,7 @@ export default function SmallCentered() {
           <Link href={"#"}>Blog</Link>
           <Link href={"#"}>Contact</Link>
         </Stack>
-      </Container>
+      </Container> */}
 
       <Box
         borderTopWidth={1}
@@ -100,17 +103,20 @@ export default function SmallCentered() {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© 2022 Chakra Templates. All rights reserved</Text>
+          <Text>© Raphael C</Text>
           <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Twitter"} href={"#"}>
-              <FaTwitter />
+            <SocialButton
+              label={"FaGithub"}
+              href={"https://github.com/raphaelclh"}
+            >
+              <Box as={FaGithub} color="palette.100" />
             </SocialButton>
-            <SocialButton label={"YouTube"} href={"#"}>
-              <FaYoutube />
+            <SocialButton label={"FaGithubSquare"} href={"#"}>
+              <Box as={FaInstagram} color="palette.100" />
             </SocialButton>
-            <SocialButton label={"Instagram"} href={"#"}>
-              <FaInstagram />
-            </SocialButton>
+            {/* <SocialButton label={"FaGithub"} href={"#"}>
+              <FaGithubSquare />
+            </SocialButton> */}
           </Stack>
         </Container>
       </Box>

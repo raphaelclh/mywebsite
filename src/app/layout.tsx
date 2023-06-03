@@ -8,6 +8,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <title>Raphael</title>
+      <head>
+        <link rel="icon" href="/icon.ico" sizes="any" />
+      </head>
       <body>
         <Providers>{children}</Providers>
       </body>
