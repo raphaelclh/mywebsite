@@ -8,7 +8,7 @@ const Home = () => {
   const bg = useColorModeValue("brand.500", "teal");
   return (
     <Box bg="palette.400" w="100vw" h="100vh">
-      {/* <Navbar /> */}
+      <Navbar />
       <Container centerContent>
         <Text>
           There are many benefits to a joint design and development system. Not

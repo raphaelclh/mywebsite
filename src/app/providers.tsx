@@ -18,7 +18,7 @@ const theme = extendTheme({
   components: {
     Text: {
       baseStyle: () => ({
-        color: colors.palette[100],
+        color: colors.palette[200],
       }),
     },
   },

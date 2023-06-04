@@ -9,7 +9,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaGithub, FaInstagram, FaGithubSquare } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { ReactNode } from "react";
 
 const Logo = (props: any) => {
@@ -69,8 +69,8 @@ export default function SmallCentered() {
   return (
     <Box
       sx={{ width: "100%", position: "fixed", bottom: 0, left: 0 }}
-      bg="palette.300"
-      color={useColorModeValue("gray.700", "gray.200")}
+      bg="palette.400"
+      // color={useColorModeValue("gray.700", "gray.200")}
     >
       {/* <Container
         as={Stack}
@@ -90,9 +90,9 @@ export default function SmallCentered() {
       </Container> */}
 
       <Box
-        borderTopWidth={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.700")}
+      // borderTopWidth={1}
+      // borderStyle={"solid"}
+      // borderColor={useColorModeValue("gray.200", "gray.700")}
       >
         <Container
           as={Stack}
@@ -106,13 +106,22 @@ export default function SmallCentered() {
           <Text>© Raphael C</Text>
           <Stack direction={"row"} spacing={6}>
             <SocialButton
-              label={"FaGithub"}
+              label={"Github"}
               href={"https://github.com/raphaelclh"}
             >
               <Box as={FaGithub} color="palette.100" />
             </SocialButton>
-            <SocialButton label={"FaGithubSquare"} href={"#"}>
+            <SocialButton
+              label={"Instagram"}
+              href={"https://www.instagram.com/raphsraphs/?hl=en"}
+            >
               <Box as={FaInstagram} color="palette.100" />
+            </SocialButton>
+            <SocialButton
+              label={"LinkedIn"}
+              href={"https://www.linkedin.com/in/raphael-c-8a0882b6/"}
+            >
+              <Box as={FaLinkedin} color="palette.100" />
             </SocialButton>
             {/* <SocialButton label={"FaGithub"} href={"#"}>
               <FaGithubSquare />
