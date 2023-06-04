@@ -10,7 +10,7 @@ export default function RootLayout({
     <html lang="en">
       <title>Raphael C</title>
       <head>
-        <link rel="icon" href="/icon.ico" sizes="any" />
+        <link rel="icon" href="/icon2.ico" sizes="any" />
       </head>
       <body>
         <Providers>{children}</Providers>
