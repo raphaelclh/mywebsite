@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <title>Raphael</title>
+      <title>Raphael C</title>
       <head>
         <link rel="icon" href="/icon.ico" sizes="any" />
       </head>
