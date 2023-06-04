@@ -22,19 +22,19 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 const Links = [
   {
     label: "Home",
-    href: "",
+    href: "/",
   },
   {
     label: "About me",
-    href: "",
+    href: "/about",
   },
   {
     label: "Experience",
-    href: "",
+    href: "/experience",
   },
   {
     label: "Contact",
-    href: "",
+    href: "/contact",
   },
 ];
 
@@ -45,7 +45,7 @@ const NavLink = ({ href, children }: { href: string; children: ReactNode }) => (
     rounded={"md"}
     _hover={{
       textDecoration: "none",
-      bg: useColorModeValue("gray.200", "gray.700"),
+      // bg: useColorModeValue("gray.200", "gray.700"),
     }}
     href={href}
   >
@@ -59,11 +59,11 @@ export default function Simple() {
   return (
     <>
       <Box bg="palette.400" px={4}>
-        <Flex h={16} position={"absolute"}>
+        {/* <Flex h={16} position={"absolute"}>
           <Box sx={{ padding: 5 }}>
-            <Text>Logo</Text>
+            <Text>Raphael Chua</Text>
           </Box>
-        </Flex>
+        </Flex> */}
         <Flex h={16} alignItems={"center"} justifyContent={"center"}>
           <IconButton
             size={"md"}

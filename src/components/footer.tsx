@@ -100,10 +100,10 @@ export default function SmallCentered() {
           py={4}
           direction={{ base: "column", md: "row" }}
           spacing={4}
-          justify={{ base: "center", md: "space-between" }}
+          justify={{ base: "center", md: "center" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© Raphael C</Text>
+          {/* <Text>© Raphael C</Text> */}
           <Stack direction={"row"} spacing={6}>
             <SocialButton
               label={"Github"}
