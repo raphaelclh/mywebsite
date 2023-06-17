@@ -22,6 +22,10 @@ const theme = extendTheme({
       }),
     },
   },
+  fonts: {
+    heading: `'Fira Code', sans-serif`,
+    body: `'Fira Code', sans-serif`,
+  },
 });
 
 export function Providers({ children }: { children: React.ReactNode }) {
