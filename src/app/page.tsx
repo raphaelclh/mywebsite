@@ -16,8 +16,18 @@ const Home = () => {
   return (
     <Box>
       <Section>
-        <Heading textAlign={"center"}>Hi. I&apos;m Raphael</Heading>
-        <Text textAlign={"center"}>Software Engineer in Singapore</Text>
+        <Heading
+          textAlign={"center"}
+          fontSize={{ base: "20px", sm: "20px", md: "25px", lg: "36px" }}
+        >
+          Hi. I&apos;m Raphael
+        </Heading>
+        <Text
+          textAlign={"center"}
+          fontSize={{ base: "10px", sm: "10px", md: "14px", lg: "16px" }}
+        >
+          Software Engineer in Singapore
+        </Text>
       </Section>
       <Section bg="palette.200">
         <Heading>Hi. I am Raphael</Heading>
