@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <Box>
       <Section>
-        <Heading textAlign={"center"}>Hi. I'm Raphael</Heading>
+        <Heading textAlign={"center"}>Hi. I&apos;m Raphael</Heading>
         <Text textAlign={"center"}>Software Engineer in Singapore</Text>
       </Section>
       <Section bg="palette.200">
