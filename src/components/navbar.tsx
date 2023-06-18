@@ -58,7 +58,7 @@ export default function Simple() {
 
   return (
     <>
-      <Box bg="palette.400" px={4}>
+      <Box bg="palette.100" px={4}>
         {/* <Flex h={16} position={"absolute"}>
           <Box sx={{ padding: 5 }}>
             <Text>Raphael Chua</Text>

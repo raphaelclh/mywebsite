@@ -6,10 +6,10 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 const colors = {
   palette: {
-    100: "#DDE6ED",
-    200: "#9DB2BF",
-    300: "#526D82",
-    400: "#27374D",
+    100: "#F4F4F2",
+    200: "#E8E8E8",
+    300: "#BBBFCA",
+    400: "#495464",
   },
 };
 
@@ -18,7 +18,12 @@ const theme = extendTheme({
   components: {
     Text: {
       baseStyle: () => ({
-        color: colors.palette[200],
+        color: colors.palette[400],
+      }),
+    },
+    Heading: {
+      baseStyle: () => ({
+        color: colors.palette[400],
       }),
     },
   },

@@ -69,7 +69,7 @@ export default function SmallCentered() {
   return (
     <Box
       sx={{ width: "100%", position: "fixed", bottom: 0, left: 0 }}
-      bg="palette.400"
+      bg="palette.100"
       // color={useColorModeValue("gray.700", "gray.200")}
     >
       {/* <Container
@@ -109,19 +109,19 @@ export default function SmallCentered() {
               label={"Github"}
               href={"https://github.com/raphaelclh"}
             >
-              <Box as={FaGithub} color="palette.100" />
+              <Box as={FaGithub} color="palette.400" />
             </SocialButton>
             <SocialButton
               label={"Instagram"}
               href={"https://www.instagram.com/raphsraphs/?hl=en"}
             >
-              <Box as={FaInstagram} color="palette.100" />
+              <Box as={FaInstagram} color="palette.400" />
             </SocialButton>
             <SocialButton
               label={"LinkedIn"}
               href={"https://www.linkedin.com/in/raphael-c-8a0882b6/"}
             >
-              <Box as={FaLinkedin} color="palette.100" />
+              <Box as={FaLinkedin} color="palette.400" />
             </SocialButton>
             {/* <SocialButton label={"FaGithub"} href={"#"}>
               <FaGithubSquare />
