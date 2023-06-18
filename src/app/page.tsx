@@ -14,8 +14,12 @@ import Section from "../components/section";
 const Home = () => {
   const bg = useColorModeValue("brand.500", "teal");
   return (
-    <Container centerContent>
+    <Box>
       <Section>
+        <Heading>Hi. I'm Raphael</Heading>
+        <Text textAlign={"center"}>Software Engineer in Singapore</Text>
+      </Section>
+      <Section bg="palette.200">
         <Heading>Hi. I am Raphael</Heading>
         <Text>Software Engineer in Singapore</Text>
       </Section>
@@ -23,11 +27,7 @@ const Home = () => {
         <Heading>Hi. I am Raphael</Heading>
         <Text>Software Engineer in Singapore</Text>
       </Section>
-      <Section>
-        <Heading>Hi. I am Raphael</Heading>
-        <Text>Software Engineer in Singapore</Text>
-      </Section>
-    </Container>
+    </Box>
   );
 };
 
