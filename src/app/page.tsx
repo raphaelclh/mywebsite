@@ -15,7 +15,7 @@ const Home = () => {
   const bg = useColorModeValue("brand.500", "teal");
   return (
     <Box>
-      <Section>
+      <Section marginTop="-50px">
         <Heading
           textAlign={"center"}
           fontSize={{ base: "20px", sm: "20px", md: "25px", lg: "36px" }}
