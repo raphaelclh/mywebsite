@@ -21,11 +21,11 @@ export default function RootLayout({
       </head>
       <body>
         <Providers>
-          <Box bg="palette.100" w="100vw" h="100vh">
-            <Navbar />
-            {children}
-            <Footer />
-          </Box>
+          {/* <Box bg="palette.100" w="100vw" h="100vh"> */}
+          {/* <Navbar /> */}
+          {children}
+          <Footer />
+          {/* </Box> */}
         </Providers>
       </body>
     </html>
