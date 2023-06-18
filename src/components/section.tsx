@@ -10,7 +10,7 @@ const section = ({
   children: React.ReactNode;
 }) => {
   return (
-    <Box position="relative" h="100vh" w="100vw" maxW="100%" bg={bg}>
+    <Box position="relative" h="100vh" w="100vw" maxW="100%" bg={bg} {...props}>
       <AbsoluteCenter p="4" color="white" axis="both">
         {children}
       </AbsoluteCenter>
