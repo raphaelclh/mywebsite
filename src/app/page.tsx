@@ -9,6 +9,7 @@ import {
   Text,
   Image,
   Flex,
+  Stack,
 } from "@chakra-ui/react";
 
 import Section from "../components/section";
@@ -31,14 +32,32 @@ const Home = () => {
           Software Engineer in Singapore
         </Text>
       </Section>
-      <Section bg="palette.200">
-        <Flex h={16} alignItems={"center"} justifyContent={"center"}>
-          <Box p={10}>
+      <Section bg="palette.200" makeAbsoluteCenter={false} display="contents">
+        <Flex
+          h={16}
+          alignItems={"center"}
+          justifyContent={"center"}
+          marginBottom={"100px"}
+        >
+          <Text
+            textAlign={"center"}
+            fontSize={{ base: "20px", sm: "20px", md: "25px", lg: "36px" }}
+          >
+            About me
+          </Text>
+        </Flex>
+        <Flex
+          h={16}
+          alignItems={"center"}
+          justifyContent={"center"}
+          direction={{ base: "column-reverse", md: "row" }}
+        >
+          <Box p={10} wordBreak={"break-all"}>
             <Text
               textAlign={"center"}
               fontSize={{ base: "10px", sm: "10px", md: "14px", lg: "16px" }}
             >
-              Software Engineer in Singapore
+              leoasdoadjsoajdsaodjasdosadjsaodjsaojdsaodjaaaaaaaaaaaaaaaajdaojdaosjdoasjdasoj
             </Text>
           </Box>
           <Image
