@@ -63,8 +63,8 @@ const Home = () => {
           <Image
             borderRadius="full"
             boxSize="150px"
-            src="https://bit.ly/dan-abramov"
-            alt="Dan Abramov"
+            src="/profile_pic_1.jpg"
+            alt="Profile Picture"
           />
         </Flex>
       </Section>
