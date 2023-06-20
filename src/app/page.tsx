@@ -15,12 +15,13 @@ import {
 } from "@chakra-ui/react";
 
 import Section from "../components/section";
+import Timeline from "@/components/timeline";
 
 const Home = () => {
   const bg = useColorModeValue("brand.500", "teal");
   return (
     <Box>
-      <Section marginTop="-50px">
+      <Section marginTop="-50px" h="100vh" w="100vw" padding={"50px"}>
         <Heading
           textAlign={"center"}
           fontSize={{ base: "20px", sm: "20px", md: "25px", lg: "36px" }}
@@ -35,7 +36,10 @@ const Home = () => {
         </Text>
       </Section>
       <Section
+        h="100vh"
+        w="100vw"
         bg="palette.200"
+        padding={"50px"}
         headerComponent={
           <Flex
             h={16}
@@ -110,9 +114,8 @@ const Home = () => {
           </Box>
         </Flex>
       </Section>
-      <Section>
-        <Heading>Hi. I am Raphael</Heading>
-        <Text>Software Engineer in Singapore</Text>
+      <Section makeAbsoluteCenter={false} w="100vw" paddingBottom="100px">
+        <Timeline></Timeline>
       </Section>
     </Box>
   );

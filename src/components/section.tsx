@@ -1,15 +1,7 @@
 import { AbsoluteCenter, Box, Center } from "@chakra-ui/react";
-import React from "react";
+import React, { ComponentPropsWithoutRef } from "react";
 
-const section = ({
-  bg = "palette.100",
-  marginTop,
-  paddingTop,
-  children,
-  makeAbsoluteCenter = true,
-  display,
-  headerComponent,
-}: {
+interface SectionProps {
   bg?: string;
   marginTop?: string;
   paddingTop?: string;
@@ -17,16 +9,21 @@ const section = ({
   makeAbsoluteCenter?: boolean;
   display?: string;
   headerComponent?: React.ReactNode;
+  [x: string]: any;
+}
+
+const section: React.FC<SectionProps> = ({
+  bg = "palette.100",
+  marginTop,
+  paddingTop,
+  children,
+  makeAbsoluteCenter = true,
+  display,
+  headerComponent,
+  ...props
 }) => {
   return (
-    <Box
-      position="relative"
-      h="100vh"
-      w="100vw"
-      maxW="100%"
-      bg={bg}
-      padding={"50px"}
-    >
+    <Box position="relative" maxW="100%" bg={bg} {...props}>
       {headerComponent ? headerComponent : null}
       {makeAbsoluteCenter ? (
         <AbsoluteCenter
