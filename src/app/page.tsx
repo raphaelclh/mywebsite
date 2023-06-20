@@ -58,7 +58,7 @@ const Home = () => {
           justifyContent={"center"}
           direction={{ base: "column-reverse", md: "row" }}
         >
-          <Box p={4} wordBreak={"break-word"} width={{ lg: "50%" }}>
+          <Box p={4} wordBreak={"break-word"} width={{ md: "65%", lg: "50%" }}>
             <Text
               fontSize={{ base: "10px", sm: "10px", md: "14px", lg: "16px" }}
             >
