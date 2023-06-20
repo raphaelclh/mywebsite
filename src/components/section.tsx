@@ -8,6 +8,7 @@ const section = ({
   children,
   makeAbsoluteCenter = true,
   display,
+  headerComponent,
 }: {
   bg?: string;
   marginTop?: string;
@@ -15,6 +16,7 @@ const section = ({
   children: React.ReactNode;
   makeAbsoluteCenter?: boolean;
   display?: string;
+  headerComponent?: React.ReactNode;
 }) => {
   return (
     <Box
@@ -25,6 +27,7 @@ const section = ({
       bg={bg}
       padding={"50px"}
     >
+      {headerComponent ? headerComponent : null}
       {makeAbsoluteCenter ? (
         <AbsoluteCenter
           width={"full"}
