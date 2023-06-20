@@ -39,14 +39,8 @@ const Home = () => {
         h="100vh"
         w="100vw"
         bg="palette.200"
-        padding={"50px"}
         headerComponent={
-          <Flex
-            h={16}
-            alignItems={"center"}
-            justifyContent={"center"}
-            marginBottom={"100px"}
-          >
+          <Flex h={16} alignItems={"center"} justifyContent={"center"}>
             <Text
               textAlign={"center"}
               fontSize={{ base: "20px", sm: "20px", md: "25px", lg: "36px" }}
@@ -60,6 +54,7 @@ const Home = () => {
           h={16}
           alignItems={"center"}
           justifyContent={"center"}
+          marginTop={{ base: "70px", sm: "70px" }}
           direction={{ base: "column-reverse", md: "row" }}
         >
           <Box p={4} wordBreak={"break-word"} width={{ md: "65%", lg: "50%" }}>
@@ -114,7 +109,21 @@ const Home = () => {
           </Box>
         </Flex>
       </Section>
-      <Section makeAbsoluteCenter={false} w="100vw" paddingBottom="100px">
+      <Section
+        makeAbsoluteCenter={false}
+        w="100vw"
+        paddingBottom="100px"
+        headerComponent={
+          <Flex h={16} alignItems={"center"} justifyContent={"center"}>
+            <Text
+              textAlign={"center"}
+              fontSize={{ base: "20px", sm: "20px", md: "25px", lg: "36px" }}
+            >
+              Work Experience
+            </Text>
+          </Flex>
+        }
+      >
         <Timeline></Timeline>
       </Section>
     </Box>

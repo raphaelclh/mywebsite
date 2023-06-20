@@ -23,7 +23,14 @@ const section: React.FC<SectionProps> = ({
   ...props
 }) => {
   return (
-    <Box position="relative" maxW="100%" bg={bg} {...props}>
+    <Box
+      position="relative"
+      maxW="100%"
+      bg={bg}
+      paddingTop={{ base: "20px", md: "30px", lg: "50px" }}
+      // paddingBottom={{ base: "20px", md: "30px", lg: "60px" }}
+      {...props}
+    >
       {headerComponent ? headerComponent : null}
       {makeAbsoluteCenter ? (
         <AbsoluteCenter
