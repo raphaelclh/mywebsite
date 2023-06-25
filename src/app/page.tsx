@@ -48,7 +48,6 @@ const Home = () => {
               overflow={"hidden"}
               whiteSpace={"nowrap"}
               margin={"0 auto"}
-              letterSpacing={".15em"}
               borderRight={".15em solid orange"}
             >
               Hi. I&apos;m Raphael
