@@ -44,7 +44,7 @@ const Home = () => {
           <Box>
             <Heading
               fontSize={subSectionTitleTextSize}
-              animation="typing 2.5s steps(40, end), blink-caret .75s  infinite"
+              animation="typing 3.5s steps(40, end), blink-caret .75s  infinite"
               overflow={"hidden"}
               whiteSpace={"nowrap"}
               margin={"0 auto"}
