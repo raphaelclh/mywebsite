@@ -2,16 +2,13 @@
 
 import {
   Box,
-  AbsoluteCenter,
   useColorModeValue,
-  Container,
   Heading,
   Text,
   Image,
   Flex,
-  Stack,
-  Spacer,
   Link,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 
 import Section from "../components/section";
@@ -19,19 +16,26 @@ import Timeline from "@/components/timeline";
 
 const Home = () => {
   const bg = useColorModeValue("brand.500", "teal");
+  const normalTextSize = useBreakpointValue(
+    { base: "14px", sm: "16px", md: "18px", lg: "20px", xl: "22px" },
+    { ssr: false }
+  );
+  const subSubSectionTextSize = useBreakpointValue(
+    { base: "18px", sm: "18px", md: "22px", lg: "26px", xl: "30px" },
+    { ssr: false }
+  );
+  const subSectionTitleTextSize = useBreakpointValue(
+    { base: "24px", sm: "24px", md: "28px", lg: "36px", xl: "42px" },
+    { ssr: false }
+  );
+
   return (
     <Box>
       <Section marginTop="-50px" h="100vh" w="100vw" padding={"50px"}>
-        <Heading
-          textAlign={"center"}
-          fontSize={{ base: "20px", sm: "20px", md: "25px", lg: "36px" }}
-        >
+        <Heading textAlign={"center"} fontSize={subSectionTitleTextSize}>
           Hi. I&apos;m Raphael
         </Heading>
-        <Text
-          textAlign={"center"}
-          fontSize={{ base: "10px", sm: "10px", md: "14px", lg: "16px" }}
-        >
+        <Text textAlign={"center"} fontSize={normalTextSize}>
           Software Engineer in Singapore
         </Text>
       </Section>
@@ -41,10 +45,7 @@ const Home = () => {
         bg="palette.200"
         headerComponent={
           <Flex h={16} alignItems={"center"} justifyContent={"center"}>
-            <Text
-              textAlign={"center"}
-              fontSize={{ base: "20px", sm: "20px", md: "25px", lg: "36px" }}
-            >
+            <Text textAlign={"center"} fontSize={subSectionTitleTextSize}>
               About me
             </Text>
           </Flex>
@@ -58,9 +59,7 @@ const Home = () => {
           direction={{ base: "column-reverse", md: "row" }}
         >
           <Box p={4} wordBreak={"break-word"} width={{ md: "65%", lg: "50%" }}>
-            <Text
-              fontSize={{ base: "10px", sm: "10px", md: "14px", lg: "16px" }}
-            >
+            <Text fontSize={normalTextSize}>
               A seasoned full-stack software engineer with a deep focus on
               problem-solving and architectural design. With significant
               experience in diverse roles across multiple organizations, I have
@@ -84,12 +83,11 @@ const Home = () => {
               boxSize={{ base: "150px", md: "200px", lg: "250px" }}
               src="/profile_pic_1.jpg"
               alt="Profile Picture"
+              marginLeft={"auto"}
+              marginRight={"auto"}
             />
             <Box m={4}></Box>
-            <Text
-              textAlign={"center"}
-              fontSize={{ base: "20px", sm: "20px", md: "26px", lg: "30px" }}
-            >
+            <Text textAlign={"center"} fontSize={subSubSectionTextSize}>
               Raphael Chua
             </Text>
 
@@ -99,10 +97,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Text
-                textAlign={"center"}
-                fontSize={{ base: "10px", sm: "10px", md: "14px", lg: "16px" }}
-              >
+              <Text textAlign={"center"} fontSize={normalTextSize}>
                 Download resume
               </Text>
             </Link>
@@ -115,10 +110,7 @@ const Home = () => {
         paddingBottom="100px"
         headerComponent={
           <Flex h={16} alignItems={"center"} justifyContent={"center"}>
-            <Text
-              textAlign={"center"}
-              fontSize={{ base: "20px", sm: "20px", md: "25px", lg: "36px" }}
-            >
+            <Text textAlign={"center"} fontSize={subSectionTitleTextSize}>
               Work Experience
             </Text>
           </Flex>
