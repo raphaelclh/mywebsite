@@ -15,14 +15,14 @@ import Timeline from "@/components/timeline";
 
 const Home = () => {
   const normalTextSize = {
-    base: "14px",
+    base: "10px",
     sm: "16px",
     md: "18px",
     lg: "20px",
     xl: "22px",
   };
   const subSubSectionTextSize = {
-    base: "18px",
+    base: "14px",
     sm: "18px",
     md: "22px",
     lg: "26px",
@@ -30,7 +30,7 @@ const Home = () => {
   };
 
   const subSectionTitleTextSize = {
-    base: "24px",
+    base: "20px",
     sm: "24px",
     md: "28px",
     lg: "36px",
