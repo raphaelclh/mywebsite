@@ -2,7 +2,6 @@
 
 import {
   Box,
-  useColorModeValue,
   Heading,
   Text,
   Image,
@@ -15,26 +14,47 @@ import Section from "../components/section";
 import Timeline from "@/components/timeline";
 
 const Home = () => {
-  const bg = useColorModeValue("brand.500", "teal");
-  const normalTextSize = useBreakpointValue(
-    { base: "14px", sm: "16px", md: "18px", lg: "20px", xl: "22px" },
-    { ssr: false }
-  );
-  const subSubSectionTextSize = useBreakpointValue(
-    { base: "18px", sm: "18px", md: "22px", lg: "26px", xl: "30px" },
-    { ssr: false }
-  );
-  const subSectionTitleTextSize = useBreakpointValue(
-    { base: "24px", sm: "24px", md: "28px", lg: "36px", xl: "42px" },
-    { ssr: false }
-  );
+  const normalTextSize = {
+    base: "14px",
+    sm: "16px",
+    md: "18px",
+    lg: "20px",
+    xl: "22px",
+  };
+  const subSubSectionTextSize = {
+    base: "18px",
+    sm: "18px",
+    md: "22px",
+    lg: "26px",
+    xl: "30px",
+  };
+
+  const subSectionTitleTextSize = {
+    base: "24px",
+    sm: "24px",
+    md: "28px",
+    lg: "36px",
+    xl: "42px",
+  };
 
   return (
     <Box>
       <Section marginTop="-50px" h="100vh" w="100vw" padding={"50px"}>
-        <Heading textAlign={"center"} fontSize={subSectionTitleTextSize}>
-          Hi. I&apos;m Raphael
-        </Heading>
+        <Box display={"flex"} justifyContent={"center"}>
+          <Box>
+            <Heading
+              fontSize={subSectionTitleTextSize}
+              animation="typing 2.5s steps(40, end), blink-caret .75s  infinite"
+              overflow={"hidden"}
+              whiteSpace={"nowrap"}
+              margin={"0 auto"}
+              letterSpacing={".15em"}
+              borderRight={".15em solid orange"}
+            >
+              Hi. I&apos;m Raphael
+            </Heading>
+          </Box>
+        </Box>
         <Text textAlign={"center"} fontSize={normalTextSize}>
           Software Engineer in Singapore
         </Text>

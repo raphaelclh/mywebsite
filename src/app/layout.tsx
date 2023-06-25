@@ -1,6 +1,7 @@
 // app/layout.tsx
 "use client";
-import { Providers } from "./providers";
+import ChakraProviders from "./chakraProviders";
+import ContextApiProviders from "./contextApiProviders";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { Box, useColorModeValue, Container, Text } from "@chakra-ui/react";
@@ -20,13 +21,15 @@ export default function RootLayout({
         <link rel="icon" href="/icon2.ico" sizes="any" />
       </head>
       <body>
-        <Providers>
+        {/* <ContextApiProviders> */}
+        <ChakraProviders>
           {/* <Box w="100vw" h="100vh"> */}
           {/* <Navbar /> */}
           {children}
           <Footer />
           {/* </Box> */}
-        </Providers>
+        </ChakraProviders>
+        {/* </ContextApiProviders> */}
       </body>
     </html>
   );
