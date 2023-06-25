@@ -147,7 +147,7 @@ const Home = () => {
         headerComponent={
           <Flex h={16} alignItems={"center"} justifyContent={"center"}>
             <Text textAlign={"center"} fontSize={textSize.subSectionTitle}>
-              Work Experience
+              Work Experience & Education
             </Text>
           </Flex>
         }

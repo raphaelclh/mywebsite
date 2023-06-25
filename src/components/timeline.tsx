@@ -6,7 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import "./generic.css";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { MdOutlineWork } from "react-icons/md";
+import { MdOutlineWork, MdSchool } from "react-icons/md";
 import { Text, UnorderedList, ListItem } from "@chakra-ui/react";
 import { TextSizeProps } from "../app/page";
 
@@ -233,44 +233,41 @@ const Timeline: React.FC<TimelineProps> = ({ textSize }) => {
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
-        date="April 2013"
+        date="June 2019"
         iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<FaGithub />}
+        icon={<MdSchool />}
       >
-        <h3 className="vertical-timeline-element-title">
-          Content Marketing for Web, Mobile and Social Media
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-        <p>Strategy, Social Media</p>
+        <Text sx={textWithoutMargin} fontWeight={"bold !important"}>
+          B.Sc in Computing Science
+        </Text>
+        <Text sx={textWithoutMargin}>University of Glasgow</Text>
+
+        <UnorderedList>
+          <ListItem>
+            <Text>In partnership with Singapore Institute of Technology</Text>
+          </ListItem>
+          <ListItem>
+            <Text sx={textWithoutMargin}>Second Upper Honour</Text>
+          </ListItem>
+        </UnorderedList>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
-        date="November 2012"
+        date="June 2015"
         iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<FaGithub />}
+        icon={<MdSchool />}
       >
-        <h3 className="vertical-timeline-element-title">
-          Agile Development Scrum Master
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-        <p>Creative Direction, User Experience, Visual Design</p>
+        <Text sx={textWithoutMargin} fontWeight={"bold !important"}>
+          Diploma in Engineering Informatics
+        </Text>
+        <Text sx={textWithoutMargin}>Nanyang Polytechinc</Text>
+
+        <UnorderedList>
+          <ListItem>
+            <Text>GPA 3.32/4</Text>
+          </ListItem>
+        </UnorderedList>
       </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="2002 - 2006"
-        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<FaGithub />}
-      >
-        <h3 className="vertical-timeline-element-title">
-          Bachelor of Science in Interactive Digital Media Visual Imaging
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-        <p>Creative Direction, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-        icon={<FaGithub />}
-      />
     </VerticalTimeline>
   );
 };
