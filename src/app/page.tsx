@@ -13,28 +13,45 @@ import {
 import Section from "../components/section";
 import Timeline from "@/components/timeline";
 
-const Home = () => {
-  const normalTextSize = {
-    base: "10px",
-    sm: "16px",
-    md: "18px",
-    lg: "20px",
-    xl: "22px",
-  };
-  const subSubSectionTextSize = {
-    base: "14px",
-    sm: "18px",
-    md: "22px",
-    lg: "26px",
-    xl: "30px",
-  };
+type SizeValue = {
+  base: string;
+  sm: string;
+  md: string;
+  lg: string;
+  xl: string;
+};
 
-  const subSectionTitleTextSize = {
-    base: "20px",
-    sm: "24px",
-    md: "28px",
-    lg: "36px",
-    xl: "42px",
+type SizeKey = "normal" | "subSubSection" | "subSectionTitle";
+
+type TextSizePropsAlias = {
+  [key in SizeKey]: SizeValue;
+};
+
+export interface TextSizeProps extends TextSizePropsAlias {}
+
+const Home = () => {
+  const textSize: TextSizeProps = {
+    normal: {
+      base: "10px",
+      sm: "16px",
+      md: "18px",
+      lg: "20px",
+      xl: "22px",
+    },
+    subSubSection: {
+      base: "14px",
+      sm: "18px",
+      md: "22px",
+      lg: "26px",
+      xl: "30px",
+    },
+    subSectionTitle: {
+      base: "20px",
+      sm: "24px",
+      md: "28px",
+      lg: "36px",
+      xl: "42px",
+    },
   };
 
   return (
@@ -43,7 +60,7 @@ const Home = () => {
         <Box display={"flex"} justifyContent={"center"}>
           <Box>
             <Heading
-              fontSize={subSectionTitleTextSize}
+              fontSize={textSize.subSectionTitle}
               animation="typing 3.5s steps(40, end), blink-caret .75s  infinite"
               overflow={"hidden"}
               whiteSpace={"nowrap"}
@@ -54,7 +71,7 @@ const Home = () => {
             </Heading>
           </Box>
         </Box>
-        <Text textAlign={"center"} fontSize={normalTextSize}>
+        <Text textAlign={"center"} fontSize={textSize.normal}>
           Software Engineer in Singapore
         </Text>
       </Section>
@@ -64,7 +81,7 @@ const Home = () => {
         bg="palette.200"
         headerComponent={
           <Flex h={16} alignItems={"center"} justifyContent={"center"}>
-            <Text textAlign={"center"} fontSize={subSectionTitleTextSize}>
+            <Text textAlign={"center"} fontSize={textSize.subSectionTitle}>
               About me
             </Text>
           </Flex>
@@ -78,7 +95,7 @@ const Home = () => {
           direction={{ base: "column-reverse", md: "row" }}
         >
           <Box p={4} wordBreak={"break-word"} width={{ md: "65%", lg: "50%" }}>
-            <Text fontSize={normalTextSize}>
+            <Text fontSize={textSize.normal}>
               A seasoned full-stack software engineer with a deep focus on
               problem-solving and architectural design. With significant
               experience in diverse roles across multiple organizations, I have
@@ -106,7 +123,7 @@ const Home = () => {
               marginRight={"auto"}
             />
             <Box m={4}></Box>
-            <Text textAlign={"center"} fontSize={subSubSectionTextSize}>
+            <Text textAlign={"center"} fontSize={textSize.subSectionTitle}>
               Raphael Chua
             </Text>
 
@@ -116,7 +133,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Text textAlign={"center"} fontSize={normalTextSize}>
+              <Text textAlign={"center"} fontSize={textSize.normal}>
                 Download resume
               </Text>
             </Link>
@@ -129,13 +146,13 @@ const Home = () => {
         paddingBottom="100px"
         headerComponent={
           <Flex h={16} alignItems={"center"} justifyContent={"center"}>
-            <Text textAlign={"center"} fontSize={subSectionTitleTextSize}>
+            <Text textAlign={"center"} fontSize={textSize.subSectionTitle}>
               Work Experience
             </Text>
           </Flex>
         }
       >
-        <Timeline></Timeline>
+        <Timeline textSize={textSize}></Timeline>
       </Section>
     </Box>
   );

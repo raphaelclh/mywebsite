@@ -8,8 +8,13 @@ import "./generic.css";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdOutlineWork } from "react-icons/md";
 import { Text, UnorderedList, ListItem } from "@chakra-ui/react";
+import { TextSizeProps } from "../app/page";
 
-const Timeline = () => {
+interface TimelineProps {
+  textSize: TextSizeProps;
+}
+
+const Timeline: React.FC<TimelineProps> = ({ textSize }) => {
   const textWithoutMargin = { margin: "0 auto !important" };
   return (
     <VerticalTimeline>
@@ -132,21 +137,71 @@ const Timeline = () => {
 
         <UnorderedList>
           <ListItem>
-            <Text>Lorem ipsum dolor sit amet</Text>
+            <Text>
+              Worked on a Change Request for an existing Java application using
+              spring, hibernate and struts
+            </Text>
           </ListItem>
           <ListItem>
-            <Text sx={textWithoutMargin}>Lorem ipsum dolor sit amet</Text>
+            <Text sx={textWithoutMargin}>
+              Handled application support and bug fixes for the Java application
+            </Text>
           </ListItem>
           <ListItem>
-            <UnorderedList pl={4}>
-              <ListItem>Second-level item 1</ListItem>
-              <ListItem>Second-level item 2</ListItem>
-            </UnorderedList>
-            <Text sx={textWithoutMargin}>Lorem ipsum dolor sit amet</Text>
+            <Text sx={textWithoutMargin}>
+              Responsible for initial setup of development environment
+            </Text>
           </ListItem>
+          <UnorderedList pl={4}>
+            <ListItem>
+              <Text sx={textWithoutMargin}>
+                Worked with various team members to plan architecture and
+                database design for a new project.
+              </Text>
+            </ListItem>
+          </UnorderedList>
           <ListItem>
-            <Text sx={textWithoutMargin}>Lorem ipsum dolor sit amet</Text>
+            <Text sx={textWithoutMargin}>
+              Worked on a project using ReactJS and NodeJS.
+            </Text>
           </ListItem>
+
+          <UnorderedList pl={4}>
+            <ListItem>
+              <Text sx={textWithoutMargin}>
+                Apply React hooks and optimization using memorization technique
+                to the application
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text sx={textWithoutMargin}>
+                Create custom hooks to supplement and organize the application
+                code
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text sx={textWithoutMargin}>
+                Build multiple react components using the principles of Higher
+                order component
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text sx={textWithoutMargin}>
+                Implement dynamic logging with the use of RabbitMq queue system.
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text sx={textWithoutMargin}>
+                Modularization technique applied on NodeJS Api routes.
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text sx={textWithoutMargin}>
+                Worked on implementing mostly asynchronous function using async
+                and await Worked with OracleDB using SQL and Typeorm.
+              </Text>
+            </ListItem>
+          </UnorderedList>
         </UnorderedList>
       </VerticalTimelineElement>
       <VerticalTimelineElement
