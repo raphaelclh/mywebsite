@@ -27,6 +27,7 @@ const section: React.FC<SectionProps> = ({
       position="relative"
       maxW="100%"
       bg={bg}
+      minH={"100vh"}
       paddingTop={{ base: "20px", md: "30px", lg: "50px" }}
       // paddingBottom={{ base: "20px", md: "30px", lg: "60px" }}
       {...props}

@@ -33,7 +33,7 @@ const Home = () => {
   const textSize: TextSizeProps = {
     normal: {
       base: "10px",
-      sm: "16px",
+      sm: "13px",
       md: "18px",
       lg: "20px",
       xl: "22px",
@@ -76,9 +76,10 @@ const Home = () => {
         </Text>
       </Section>
       <Section
-        h="100vh"
+        // h="1200vh"
         w="100vw"
         bg="palette.200"
+        makeAbsoluteCenter={true}
         headerComponent={
           <Flex h={16} alignItems={"center"} justifyContent={"center"}>
             <Text textAlign={"center"} fontSize={textSize.subSectionTitle}>
@@ -94,18 +95,13 @@ const Home = () => {
           marginTop={{ base: "70px", sm: "70px" }}
           direction={{ base: "column-reverse", md: "row" }}
         >
-          <Box p={4} wordBreak={"break-word"} width={{ md: "65%", lg: "50%" }}>
+          <Box p={4} wordBreak={"break-word"} width={{ md: "80%", lg: "60%" }}>
             <Text fontSize={textSize.normal}>
               A seasoned full-stack software engineer with a deep focus on
               problem-solving and architectural design. With significant
               experience in diverse roles across multiple organizations, I have
               developed a strong acumen for delivering scalable applications and
-              efficient cloud solutions. <br /> <br /> My expertise spans the
-              use of cutting-edge technologies including ReactJS, NodeJS, Java,
-              and AWS, as well as leveraging Azure DevOps for pipeline
-              strategies. I have a knack for swiftly adopting new frameworks and
-              demonstrating consulting skills to aid client and peer
-              understanding. <br />
+              efficient cloud solutions. <br />
               <br />
               Recognized for my contributions to a paper on Edge Computing in
               the esteemed IEEE Globecom 2019, I am a continuous learner aiming
