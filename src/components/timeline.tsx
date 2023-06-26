@@ -218,16 +218,57 @@ const Timeline: React.FC<TimelineProps> = ({ textSize }) => {
 
         <UnorderedList>
           <ListItem>
-            <Text>Lorem ipsum dolor sit amet</Text>
+            <Text>
+              Utilized strong decision-making and problem-solving skills
+            </Text>
           </ListItem>
           <ListItem>
-            <Text sx={textWithoutMargin}>Lorem ipsum dolor sit amet</Text>
+            <Text sx={textWithoutMargin}>
+              Worked on Terraform script to automate AWS resources
+            </Text>
           </ListItem>
           <ListItem>
-            <Text sx={textWithoutMargin}>Lorem ipsum dolor sit amet</Text>
+            <Text sx={textWithoutMargin}>
+              Worked on assessing applications for cloud migration
+            </Text>
           </ListItem>
           <ListItem>
-            <Text sx={textWithoutMargin}>Lorem ipsum dolor sit amet</Text>
+            <Text sx={textWithoutMargin}>
+              Designed the architecture of the cloud infrastructure
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text sx={textWithoutMargin}>
+              Gathering business requirements from various business units
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text sx={textWithoutMargin}>
+              Worked with the technical leads on adjustments/modification of the
+              applications
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text sx={textWithoutMargin}>
+              Worked with cloud architect on the design of the cloud
+              architecture diagram
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text sx={textWithoutMargin}>
+              Understood the risks involved in using various AWS resources
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text sx={textWithoutMargin}>
+              Worked on version upgrades on jobs monitoring application with
+              NodeJS
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text sx={textWithoutMargin}>
+              Worked on Insurance Plan Proposal application UI with AngularJS
+            </Text>
           </ListItem>
         </UnorderedList>
       </VerticalTimelineElement>
