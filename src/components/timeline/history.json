@@ -1,0 +1,29 @@
+{
+  "timeline": [
+    {
+      "type": "work",
+      "title": "Developer",
+      "company": "Standard Chartered",
+      "school": "",
+      "location": "Singapore",
+      "description": [
+        "Developed UI application for elasticsearch API with ReactJS and NodeJS",
+        "Worked with helm chart tool to deploy the application to Amazon EKS",
+        "Worked on the proof of concept for migrating of pipeline strategies with Azure Devops tools",
+        "Worked on the Continuous Deployment templates for Azure Devops which were successfully adopted by all the teams"
+      ],
+      "startDate": "01/08/2022",
+      "endDate": "Present"
+    },
+    {
+      "type": "school",
+      "title": "",
+      "company": "",
+      "school": "",
+      "location": "",
+      "description": [],
+      "startDate": "",
+      "endDate": ""
+    }
+  ]
+}
