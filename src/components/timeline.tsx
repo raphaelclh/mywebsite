@@ -22,39 +22,102 @@ const Timeline: React.FC<TimelineProps> = ({ textSize }) => {
         className="vertical-timeline-element--work"
         // contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         // contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-        date="Aug 2022 - Present"
+        date="Apr 2024 - Present"
         dateClassName="timeline-date"
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         icon={<MdOutlineWork />}
       >
         <Text sx={textWithoutMargin} fontWeight={"bold !important"}>
-          Developer @ Standard Chartered
+          Senior Developer @ Standard Chartered
         </Text>
         <Text sx={textWithoutMargin}>Singapore</Text>
 
         <UnorderedList>
           <ListItem>
             <Text>
-              Developed UI application for elasticsearch API with ReactJS and
-              NodeJS
+              Led a team of 6 in automating processes that deliver
+              infrastructure to users within a single day, streamlining
+              operations and enhancing productivity.
             </Text>
           </ListItem>
           <ListItem>
             <Text sx={textWithoutMargin}>
-              Worked with helm chart tool to deploy the application to Amazon
-              EKS
+              Developed database state management systems using PostgreSQL to
+              manage infrastructure provisioning and track the status of virtual
+              machines for each team.
             </Text>
           </ListItem>
           <ListItem>
             <Text sx={textWithoutMargin}>
-              Worked on the proof of concept for migrating of pipeline
-              strategies with Azure Devops tools
+              Created an Azure DevOps pipeline extension in NodeJS, integrating
+              various internal tooling for efficient infrastructure
+              provisioning.
             </Text>
           </ListItem>
           <ListItem>
             <Text sx={textWithoutMargin}>
-              Worked on the Continuous Deployment templates for Azure Devops
-              which were successfully adopted by all the teams
+              Designed a YAML manifest validator in NodeJS that checks the
+              compliance of each application team's infrastructure requirements
+              against company standards.
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text sx={textWithoutMargin}>
+              Collaborated with the Puppet Automation Team to integrate Puppet
+              functionalities into Azure DevOps pipelines, further automating
+              and securing deployment processes.
+            </Text>
+          </ListItem>
+        </UnorderedList>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        // contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        // contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+        date="Aug 2022 - Mar 2024"
+        dateClassName="timeline-date"
+        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        icon={<MdOutlineWork />}
+      >
+        <Text sx={textWithoutMargin} fontWeight={"bold !important"}>
+          Junior Developer @ Standard Chartered
+        </Text>
+        <Text sx={textWithoutMargin}>Singapore</Text>
+
+        <UnorderedList>
+          <ListItem>
+            <Text>
+              Engineered a responsive React application, enhancing data
+              accessibility and user experience by integrating Elasticsearch for
+              dynamic data querying.
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text sx={textWithoutMargin}>
+              Developed and implemented a bank-wide Azure DevOps CI/CD YAML
+              template, standardizing development processes and significantly
+              reducing deployment errors.
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text sx={textWithoutMargin}>
+              Innovated a base template integrating compliance checks,
+              dynamically selecting deployment stacks based on user inputs,
+              thereby improving flexibility and security.
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text sx={textWithoutMargin}>
+              Created a Node.js-based Azure DevOps pipeline task extension for
+              artifact integrity verification during continuous deployment
+              stages.
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text sx={textWithoutMargin}>
+              Led the transition of application teams from Bitbucket and Jenkins
+              to Azure DevOps, minimizing downtime and enhancing development
+              workflow.
             </Text>
           </ListItem>
         </UnorderedList>
@@ -67,7 +130,7 @@ const Timeline: React.FC<TimelineProps> = ({ textSize }) => {
         icon={<MdOutlineWork />}
       >
         <Text sx={textWithoutMargin} fontWeight={"bold !important"}>
-          Software Engineer @ Envision Digital
+          Software Engineer (Frontend) @ Envision Digital
         </Text>
         <Text sx={textWithoutMargin}>Singapore</Text>
 
