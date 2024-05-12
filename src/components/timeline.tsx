@@ -57,8 +57,8 @@ const Timeline: React.FC<TimelineProps> = ({ textSize }) => {
           <ListItem>
             <Text sx={textWithoutMargin}>
               Designed a YAML manifest validator in NodeJS that checks the
-              compliance of each application team's infrastructure requirements
-              against company standards.
+              compliance of each application team&apos;s infrastructure
+              requirements against company standards.
             </Text>
           </ListItem>
           <ListItem>
