@@ -44,33 +44,44 @@ const Timeline: React.FC<TimelineProps> = ({ textSize }) => {
         icon={<MdOutlineWork />}
       >
         <Text sx={textWithoutMargin} fontWeight={"bold !important"}>
-          Developer @ Standard Chartered
+          Junior Developer @ Standard Chartered
         </Text>
         <Text sx={textWithoutMargin}>Singapore</Text>
 
         <UnorderedList>
           <ListItem>
             <Text>
-              Developed UI application for elasticsearch API with ReactJS and
-              NodeJS
+              Engineered a responsive React application, enhancing data
+              accessibility and user experience by integrating Elasticsearch for
+              dynamic data querying.
             </Text>
           </ListItem>
           <ListItem>
             <Text sx={textWithoutMargin}>
-              Worked with helm chart tool to deploy the application to Amazon
-              EKS
+              Developed and implemented a bank-wide Azure DevOps CI/CD YAML
+              template, standardizing development processes and significantly
+              reducing deployment errors.
             </Text>
           </ListItem>
           <ListItem>
             <Text sx={textWithoutMargin}>
-              Worked on the proof of concept for migrating of pipeline
-              strategies with Azure Devops tools
+              Innovated a base template integrating compliance checks,
+              dynamically selecting deployment stacks based on user inputs,
+              thereby improving flexibility and security.
             </Text>
           </ListItem>
           <ListItem>
             <Text sx={textWithoutMargin}>
-              Worked on the Continuous Deployment templates for Azure Devops
-              which were successfully adopted by all the teams
+              Created a Node.js-based Azure DevOps pipeline task extension for
+              artifact integrity verification during continuous deployment
+              stages.
+            </Text>
+          </ListItem>
+          <ListItem>
+            <Text sx={textWithoutMargin}>
+              Led the transition of application teams from Bitbucket and Jenkins
+              to Azure DevOps, minimizing downtime and enhancing development
+              workflow.
             </Text>
           </ListItem>
         </UnorderedList>
